@@ -12,7 +12,8 @@ const Producto = require('../models/producto');
 
 
 // default options, guarda el fichero en req.files
-app.use(fileUpload({ useTempFiles: true }));
+//app.use(fileUpload({ useTempFiles: true }));
+app.use(fileUpload());
 
 
 app.put('/upload/:tipo/:id', function (req, res) {
